@@ -1,0 +1,86 @@
+.carousel-inner{
+    width: 70%;
+    margin: auto;
+   
+}
+
+.carousel-bg .carousel-inner .item {
+ background-color: darkslategrey;
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+}
+
+ footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+.media-body p
+{
+    word-wrap: break-word;
+}
+.txt p
+{
+    word-wrap: break-word;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+.container hr
+{   
+    border-width: thick;
+    border-color: aqua;
+}
+.container .jumbotron
+{
+    background-color: #333366;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.bluebox .glyphicon-star
+{
+    color: #996699;
+    font-size: 40px;
+}
+
+.purplebox .glyphicon-cloud
+{
+    color: #66CC66;
+    font-size: 40px;
+}
+
+.redbox .glyphicon-plane
+{
+    color:#336699;
+    font-size: 40px;
+}
+
+body
+{
+    background-image: url(Pictures/images.jpeg);
+    background-size: cover;
+}
+

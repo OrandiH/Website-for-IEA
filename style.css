@@ -1,0 +1,57 @@
+.carousel-inner{
+    width: 70%;
+    margin: auto;
+}
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: deepskyblue;
+  }
+
+.navbar {
+    margin-bottom: 0;
+    background:#996699;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: magenta!important;
+    background-color: #fff !important;
+}
+
+.navbar-header .navbar-toggle .icon-bar{
+    border-color: transparent;
+    background-color: cornsilk; 
+    
+}
+.footer{
+    background-color: rebeccapurple;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    background-color: #65C665;
+    font-size: 15px;
+    color: #fff;
+}
+.testimony
+{
+    color:black;
+    font-size: 15px;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    background-color: #fff;
+}
+
+.caption
+{
+    color: black;
+    font-size: 13.5px;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    
+}
