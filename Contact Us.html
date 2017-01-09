@@ -10,15 +10,18 @@
  <link rel="stylesheet" type="text/css" href="style.css"/>
           <!--Font Awesome stylesheet-->
 <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+     
+  <!--Droid Serif font CDN--> 
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+     
      <link rel="icon" type="image/x-icon" href="favicon.ico" />
  <!-- Bootstrap core CSS -->
  <link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head> 
-<!Main content-->    
+<!--Main content-->    
 <body id="myPage">
-    <!Nav bar-->
- <!Nav bar-->
+ <!--Nav bar-->
 <nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -28,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                   
             </button>
-            <a class="navbar-brand" href="Travel agency web page.html"><img src="Pictures/logo.jpg" alt="International exchange agency"></a>
+            <a class="navbar-brand" href="index.html"><img src="Pictures/logo.jpg" alt="International exchange agency"></a>
         </div>
         <div class="navbar-collapse collapse" id="myNavBar">
             <ul class="nav navbar-nav">
@@ -40,7 +43,8 @@
               <li><a href="Testimonials.html">Testimonials</a></li>
 
             </ul>
-            <button class="btn btn-info navbar-btn">Application form</button>
+            <button class="btn btn-info navbar-btn"><a href="docs/IEA%202017%20brochure.pdf" download="IEA2017brochure">Application brochure</a></button>
+            <button class="btn btn-info navbar-btn"><a href="docs/J1 W&T application Form.doc" download="J1W&TForm">Application form</a></button>
         </div>
     </div>
     
@@ -65,7 +69,7 @@
         <li data-target="#myCarousel" data-slide-to="11" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="12" class="active"></li>
      </ol>
-     <! Wrapper for slides-->
+     <!--Wrapper for slides-->
      <div class="carousel-inner" role="listbox">
          <!--Initial image,other images will follow this one-->
            <div class="item active" style="background-image:url(Pictures/IMG-20161105-WA0003.jpg);">
@@ -114,25 +118,17 @@
 <br/>
 <!--Main page content-->
 <div class="container">
-    
-    <div class="col-md-8">
-        <h2 class="text-info">Questions and Comments</h2>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-7">
             <!--Start of form-->
-            <form class="form-horizontal">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"><h2>Questions and Comments</h2></div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-md-10">
                         <input type="email" class="form-control" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                                <label><input type="checkbox">Check here to receive email updates
-                                </label>
-                            </div>
-                        </div>
                     </div>
                 </div>
                  <div class="form-group">
@@ -150,53 +146,54 @@
                     </div>
                 </div>
                  <div class="form-group">
-                    <label for="comment" class="control-label col-sm-2">Message:</label>
-                    <textarea class="col-sm-10" rows="5" placeholder="Enter message here"></textarea>
-                     
+                        <label for="comment" class="control-label col-sm-2">Message:</label>
+                     <div class="col-sm-10">
+                     <textarea class="form-control" rows="6" cols="6" placeholder="Enter message here"></textarea>
+                     </div>
+                    
                 </div>
 
                     <div class="col-sm-10">
                          <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                       
-                    
-            </form>
-                
-                
+            </form> <!--End of contact form-->
+                        </div>
+                        </div>
             </div>
-            
-            
-        </div>
+                <div class="col-sm-5">
+                     <div class="panel panel-primary">
+                        <div class="panel-heading"><h2>Postal Address</h2></div>
+                        <div class="panel-body">
+                            <p class="lead">International Exchange Agency</p>
+                                <span><p>3 Cargill Avenue Shop 13 Kingston 10, Jamaica</p></span>
+                            <span>
+                            <p class="text-left">
+                Phone Numbers:<br/>876-330-9151<br/>876-453-0694 <br/>876-906-9311<br/>
+                                E-mail: internationalexchange2@gmail.com<br/>
+                                Skype:  internationalexchange2<br/>
+                                Twitter: IEA<br/>
+                                Website: www.internationalexchangeagency.com<br/>
+                            </p>
+                           </span>
+                        </div>
+                </div>
+                   
+                </div>
+     </div>
+             
        <hr>
-        <h2>Postal Address</h2>
-        
-        <p class="lead">International Exchange Agency</p>
-        <span>
-        <p>
-            3 Cargill Avenue Shop 13 Kingston 10, Jamaica
-        </p>
-        </span>
-        <span>
-            <p class="text-left text-info">
-                Phone Numbers:<br/>1876-330-9151<br/>1876-453-0694 <br/>1876-906-9311<br/>
-E-mail: internationalexchange2@gmail.com<br/>
-Skype:  internationalexchange2<br/>
-Twitter: IEA<br/>
-Website: www.internationalexchangeagency.com<br/>
-            </p>
-        </span>
+    
         <!--Container for google map-->
         <div style="width:100%;height:350px" id="map">
-        </div>
-        <!--End of container for map-->
-    </div>
+        </div><!--End of container for map-->
+   
     
-</div><!--Main page content-->
-    
+</div><!--End of Main page content-->
+    <br/>
     <!--Footer area -->
           <footer class="footer">
       <div class="container-fluid text-center">
-          <a href="#myPage" title="To Top">
+          <a href="#myPage" title="To Top" class="Top">
                 <span class="glyphicon glyphicon-chevron-up"></span>
             </a>
         <p class="text-center">Copyright &copy; <span class="text-primary">International exchange agency</span> </p>

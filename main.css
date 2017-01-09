@@ -53,8 +53,8 @@ a:active {
 }
 .container .jumbotron
 {
-    background-color: #333366;
-    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    background-color: #1744A3;
+    font-family: 'Droid Serif', serif;
     font-size: 15px;
     color: #fff;
 }
@@ -78,9 +78,14 @@ a:active {
     font-size: 40px;
 }
 
-body
+body 
 {
     background-image: url(Pictures/images.jpeg);
     background-size: cover;
+    font-family: 'Droid Serif', serif;
+}
+body .panel
+{
+     font-family: 'Droid Serif', serif;
 }
 
