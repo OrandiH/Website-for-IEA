@@ -10,12 +10,12 @@
 
 .navbar {
     margin-bottom: 0;
-    background:#CF58BD;
+    background:#B90091;
     z-index: 9999;
     border: 0;
     font-size: 14px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     border-radius: 0;
      font-family: 'Droid Serif', serif;
 }
@@ -36,7 +36,7 @@
 }
 .footer{
     font-family: 'Droid Serif', serif;
-    background-color: #2DB98A;
+    background-color: #62E200;
     font-size: 15px;
     color: #fff;
 }
