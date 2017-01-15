@@ -1,4 +1,11 @@
 <!--Contact Us page-->
+<!--PHP script-->
+<?php
+session_start();
+require_once'helpers/security.php';
+$errors=isset($_SESSION['errors'])?$_SESSION['errors']:[];
+$fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
+?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -37,7 +44,7 @@
             <ul class="nav navbar-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="About Us.html">About Us</a></li>
-              <li><a href="Contact Us.html">Contact Us</a></li>
+              <li><a href="ContactUs.php">Contact Us</a></li>
               <li><a href="Programs.html">Programs</a></li>   
               <li><a href="Visa Sponsors.html">Visa Sponsors</a></li>
               <li><a href="Testimonials.html">Testimonials</a></li>
@@ -119,47 +126,65 @@
 <!--Main page content-->
 <div class="container">
         <div class="row">
+            <?php if(!empty($errors)):?>
+                    <div class="panel">
+                        <ul><li><?php echo implode('</li> <li>', $errors)?></li></ul>
+                    </div>
+                <?php endif; ?>
             <div class="col-sm-7">
             <!--Start of form-->
                     <div class="panel panel-primary">
                         <div class="panel-heading"><h2>Questions and Comments</h2></div>
                         <div class="panel-body">
-                            <form action="form-process.php" method="post" class="form-horizontal" id="myForm">
+                            <form action="formprocess.php" method="post" class="form-horizontal" id="myForm">
                                 <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-md-10">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <input type="text" name="email" autocomplete="off" class="form-control" placeholder="Enter Email" <?php echo isset ($fields['email'])? 'value="'.e($fields['email']).'"':''?>>
                     </div>
                 </div>
                  <div class="form-group">
                     <label class="control-label col-sm-2" for="name">Name:
                     </label>
                     <div class="col-md-10">
-                        <input type = "text" class="form-control" id="name" placeholder="Enter name">
+                        <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Enter Name" <?php echo isset ($fields['name'])? 'value="'.e($fields['name']).'"':''?>>
                     </div>
                 </div>   
              <div class="form-group">
                     <label class="control-label col-sm-2" for="subject">Subject:
                     </label>
                     <div class="col-sm-10">
-                        <input type = "text" class="form-control" id="subject" placeholder="Enter subject">
+                        <input type="text" name="subject" autocomplete="off" class="form-control" placeholder="Enter Subject" <?php echo isset ($fields['subject'])? 'value="'.e($fields['subject']).'"':''?>>
                     </div>
                 </div>
                  <div class="form-group">
                         <label for="comment" class="control-label col-sm-2">Message:</label>
                      <div class="col-sm-10">
-                     <textarea class="form-control" rows="6" cols="6" placeholder="Enter message here" id="message"></textarea>
+                    <textarea class="form-control" rows="8" cols="6" id="comment" name="message"<?php echo isset ($fields['message'])? e($fields['message']):''?>></textarea>
                      </div>
                     
                 </div>
 
                     <div class="col-sm-10">
                          <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
-                        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
                     </div>
+                    <div class="modal fade" id="thankyouModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title">Message Sent!</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <p class="lead">Thanks for contacting us! We will get back to you as soon as possible.</p>
+                              </div>    
+                            </div>
+                          </div>
+                    </div>
+                                
             </form> <!--End of contact form-->
                         </div>
-                        </div>
+                    </div>
             </div>
                 <div class="col-sm-5">
                      <div class="panel panel-primary">
@@ -221,5 +246,17 @@
     <!--AIzaSyDrS2ztB7FPBuVSHGOvzY4cOL6KpHyO3LI-->
     <!--Script for smooth scrolling-->
     <script src="scroll.js"></script>
+        <script>
+         $(document).ready(function(){
+             $('#myForm').submit(function(){
+                $('#thankyouModal').modal('show');
+            })
+         });
+    </script>
+    
 </body>
 </html>
+<?php
+unset($_SESSION['errors']);
+unset($_SESSION['fields']);
+?>
