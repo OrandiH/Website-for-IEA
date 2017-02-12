@@ -57,8 +57,9 @@
     
 }
 
-.logo
+.nav-logo
 {
+    margin-top: -15%;
     width: 40px;
     height: 35px;
 }
