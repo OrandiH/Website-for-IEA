@@ -1,11 +1,10 @@
+//This function renders a Google Map on the Contact Us page
+
 function myMap(){
-    
-    
-     var point = new google.maps.LatLng(18.006320, -76.796156);
+
+    var point = new google.maps.LatLng(18.006320, -76.796156);
     
     var MapCanvas = document.getElementById("map");
-    
-   
     
     var mapOptions = {
         center:point,zoom: 17

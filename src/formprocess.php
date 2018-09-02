@@ -1,6 +1,10 @@
 <?php
 session_start();
-require_once 'libs/phpmailer/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 
 $errors =[];
 
@@ -30,43 +34,46 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'],$_POST['subject']))
     }
     
     if(empty($errors)){
-        $m=new PHPMailer;
+        $m=new PHPMailer(true);
         $m->isSMTP();
         $m->SMTPAuth=true;
         $m->Host='smtp.gmail.com';
-        $m->Username='idnarosirrah@gmail.com';//replace by your email address
-        $m->Password='stjago20136a1';//replace with your password
+        $m->Username='testingharris2018@gmail.com';//replace by your email address
+        $m->Password='utech2018';//replace with your password
         $m->SMTPSecure='ssl';
         $m->Port=465;
+
+        $m->setFrom(''.$fields['email']);
+        $m->addAddress('testingharris2018@gmail.com'); //This is the recipient address
 
         $m->isHTML();
         $m->Subject =''. $fields['subject'];
         $m->Body='From:'.$fields['name'].'('.$fields['email'].')<p>'.$fields['message'].'</p>';
 
-        $m->FromName=''.$fields['name'];
-        $m->AddAddress('idnarosirrah@gmail.com',' '.$fields['name']);
         //Testing for valid email
         if (preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email))
         {
             //Email sent
             if ($m->send()) 
             {
-                header('Location:ContactUs.php');
-                die();
+                header('Location:ConfirmEmail.html');
             }
             else
             {
                 $errors[]="Sorry ,Could not send email.Try again later.";
+                echo $m->ErrorInfo;
             }            
+            die();
         }
         
     }
+
 }else{
     $errors[]= 'Something went wrong';
 }
 $_SESSION['errors']=$errors;
 $_SESSION['fields']=$fields;
-header ('Location:ContactUs.php');
+header("Refresh:5; url:ContactUs.php");
 
 
 // Function for filtering input values.
@@ -80,3 +87,4 @@ return $data;
 }
 
 ?>
+

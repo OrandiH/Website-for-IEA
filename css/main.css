@@ -80,7 +80,7 @@ a:active {
 
 body 
 {
-    background-image: url(Pictures/images.jpeg);
+    background-image: url(../Pictures/images.jpeg);
     background-size: cover;
     font-family: 'Droid Serif', serif;
 }
