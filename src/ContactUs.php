@@ -82,7 +82,7 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
      <!--Wrapper for slides-->
      <div class="carousel-inner" role="listbox">
          <!--Initial image,other images will follow this one-->
-         <div class="item active" style="background-image:url(../Pictures/IMG-20161105-WA0003.jpg);">
+         <div class="item active" style="background-image:url(../Pictures/IMG-20180524-WA0003.jpg);">
         </div>
          
          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0004.jpg);">
