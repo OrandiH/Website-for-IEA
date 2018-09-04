@@ -37,6 +37,7 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                   
             </button>
+            &nbsp;
             <a class="navbar-brand" href="index.html"><img class ="nav-logo" src="../Pictures/logo.png" alt="International exchange agency" ></a>
         </div>
         <div class="navbar-collapse collapse" id="myNavBar">
@@ -49,12 +50,11 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
               <li><a href="Programs.html">Programs</a></li>   
               <li><a href="VisaSponsors.html">Visa Sponsors</a></li>
               <li><a href="Testimonials.html">Testimonials</a></li>
-
             </ul>
-            <button class="btn btn-info navbar-btn"><a href="files/2019WorkanndTravelBrochure.pdf" download="IEAbrochure">Application brochure</a></button>
+            <button class="btn btn-info navbar-btn"><a href="../files/2019WorkandTravelBrochure.pdf" download="IEAbrochure">Application Brochure</a></button>
              &nbsp;
             &nbsp;
-            <button class="btn btn-info navbar-btn"><a href="files/J1W&TapplicationForm.doc" download="J1W&TForm">Application form</a></button>
+            <button class="btn btn-info navbar-btn"><a href="../files/J1W&TapplicationForm.doc" download="J1W&TForm">Application Form</a></button>
         </div>
     </div>
     
@@ -77,7 +77,6 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
         <li data-target="#myCarousel" data-slide-to="9" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="10" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="11" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="12" class="active"></li>
      </ol>
      <!--Wrapper for slides-->
      <div class="carousel-inner" role="listbox">
@@ -102,11 +101,11 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
          </div>
           <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0009.jpg)">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0020.jpg);">
+          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0021.jpg);">
          </div>
           <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0023.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0014.jpg);">
+          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0015.jpg);">
          </div>
           <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0037.jpg);">
          </div>
