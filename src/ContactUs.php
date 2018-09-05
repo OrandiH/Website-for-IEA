@@ -1,15 +1,19 @@
 <!--Contact Us page-->
-<!--PHP script-->
+<!--PHP script for session variables-->
 <?php
 session_start();
 require_once'../helpers/security.php';
 $errors=isset($_SESSION['errors'])?$_SESSION['errors']:[];
 $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
 ?>
+
 <!DOCTYPE html>
 <html>
  <head>
  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="robots" content="index, follow">
+ <meta name="description" content="International Exchange Agency Work and Travel website">
+ <meta name="keywords" content="Work and travel, J1 work and travel program, Jamaican work and travel program,CCUSA"> 
  <title>Contact Us</title>
      <!--Custom Style sheet-->
  <link rel="stylesheet" type="text/css" href="../css/style.css"/>
