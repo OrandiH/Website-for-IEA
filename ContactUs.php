@@ -2,7 +2,7 @@
 <!--PHP script for session variables-->
 <?php
 session_start();
-require_once'../helpers/security.php';
+require_once'helpers/security.php';
 $errors=isset($_SESSION['errors'])?$_SESSION['errors']:[];
 $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
 ?>
@@ -16,14 +16,14 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
  <meta name="keywords" content="Work and travel, J1 work and travel program, Jamaican work and travel program,CCUSA"> 
  <title>Contact Us</title>
      <!--Custom Style sheet-->
- <link rel="stylesheet" type="text/css" href="../css/style.css"/>
- <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+ <link rel="stylesheet" type="text/css" href="css/style.css"/>
+ <link rel="stylesheet" type="text/css" href="css/main.css"/>
 <!--Font Awesome stylesheet-->
-<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
   
-  <link rel="icon" type="image/x-icon" href="../Pictures/logo.png"/>
+  <link rel="icon" type="image/x-icon" href="Pictures/logo.png"/>
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
   <!--Droid Serif font CDN--> 
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
@@ -42,7 +42,7 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
                 <span class="icon-bar"></span>                   
             </button>
             &nbsp;
-            <a class="navbar-brand" href="index.html"><img class ="nav-logo" src="../Pictures/logo.png" alt="International exchange agency" ></a>
+            <a class="navbar-brand" href="index.html"><img class ="nav-logo" src="Pictures/logo.png" alt="International exchange agency" ></a>
         </div>
         <div class="navbar-collapse collapse" id="myNavBar">
             <ul class="nav navbar-nav">
@@ -55,10 +55,10 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
               <li><a href="VisaSponsors.html">Visa Sponsors</a></li>
               <li><a href="Testimonials.html">Testimonials</a></li>
             </ul>
-            <button class="btn btn-info navbar-btn"><a href="../files/2019WorkandTravelBrochure.pdf" download="IEAbrochure">Application Brochure</a></button>
+            <button class="btn btn-info navbar-btn"><a href="files/2019WorkandTravelBrochure.pdf" download="IEAbrochure">Application Brochure</a></button>
              &nbsp;
             &nbsp;
-            <button class="btn btn-info navbar-btn"><a href="../files/J1W&TapplicationForm.doc" download="J1W&TForm">Application Form</a></button>
+            <button class="btn btn-info navbar-btn"><a href="files/J1W&TapplicationForm.doc" download="J1W&TForm">Application Form</a></button>
         </div>
     </div>
     
@@ -81,37 +81,41 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
         <li data-target="#myCarousel" data-slide-to="9" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="10" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="11" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="12" class="active"></li>
      </ol>
      <!--Wrapper for slides-->
      <div class="carousel-inner" role="listbox">
          <!--Initial image,other images will follow this one-->
-         <div class="item active" style="background-image:url(../Pictures/IMG-20180524-WA0003.jpg);">
+         <div class="item active" style="background-image:url(Pictures/IMG-20180524-WA0003.jpg);">
         </div>
          
-         <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0004.jpg);">
+         <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0004.jpg);">
+         </div>
+
+           <div class="item" style="background-image:url(Pictures/IMG-20180528-WA0002.jpg);">
+        </div>
+         
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0005.jpg);">
          </div>
          
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0005.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0019.jpg);">
          </div>
          
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0019.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0007.jpg);">
          </div>
-         
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0007.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0025.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0025.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0036.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0036.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0009.jpg)">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0009.jpg)">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0021.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0021.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0023.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0023.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0015.jpg);">
          </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0015.jpg);">
-         </div>
-          <div class="item" style="background-image:url(../Pictures/IMG-20161105-WA0037.jpg);">
+          <div class="item" style="background-image:url(Pictures/IMG-20161105-WA0039.jpg);">
          </div>
      </div> <!--End of inner carousel-->
     
@@ -200,7 +204,7 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
                                 <span><p>3 Cargill Avenue Shop 13 Kingston 10, Jamaica</p></span>
                             <span>
                             <p class="text-left">
-                Phone Numbers:<br/>876-453-0694<br/>876-402-8302<br/>876-906-9311<br/>
+                Phone Numbers:<br/>876-453-0694<br/>876-330-9151<br/>876-906-9311<br/>
                                 E-mail: internationalexchange2@gmail.com<br/>
                                 Skype:  internationalexchange2<br/>
                                 Twitter: IEA<br/>
@@ -242,17 +246,17 @@ $fields=isset($_SESSION['fields'])?$_SESSION['fields']:[];
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!--Javascript for Google Map-->
     <!--Initalization script-->
-    <script src="../js/map.js"></script>
+    <script src="js/map.js"></script>
     <!--Calling the google maps api-->
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrS2ztB7FPBuVSHGOvzY4cOL6KpHyO3LI&callback=myMap">
      </script>
     <!--AIzaSyDrS2ztB7FPBuVSHGOvzY4cOL6KpHyO3LI-->
     <!--Script for smooth scrolling-->
-    <script src="../js/scroll.js"></script>
+    <script src="js/scroll.js"></script>
     
 </body>
 </html>
